@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculator</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<script src="Calculator.js"></script>
+</head>
+<body>
+    <div class="top">
+        <div class="inner">
+            <span id="display"></span>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="number outer" id="AC" onclick="Reset();">AC</div>
+        <div class="number outer" id="back" onclick="Back();"><img src="./assets/icons/back.png" alt="back"></div>
+        <div class="number outer" id="percentage" onclick="Display('%'), Calculate('%');">%</div>
+        <div class="number outer" id="divide" onclick="Display('/'),Calculate('/');">/</div>
+        <div class="number" id="7" onclick="Display(7),Calculate('7');">7</div>
+        <div class="number" id="8" onclick="Display(8),Calculate('8');">8</div>
+        <div class="number" id="9" onclick="Display(9),Calculate('9');">9</div>
+        <div class="number outer" id="multiply" onclick="Display('*'),Calculate('*');">*</div>
+        <div class="number" id="4" onclick="Display(4),Calculate('4');">4</div>
+        <div class="number" id="5" onclick="Display(5),Calculate('5');">5</div>
+        <div class="number" id="6" onclick="Display(6),Calculate('6');">6</div>
+        <div class="number outer" id="subtract" onclick="Display('-'),Calculate('-');">-</div>
+        <div class="number" id="1" onclick="Display(1),Calculate('1');">1</div>
+        <div class="number" id="2" onclick="Display(2),Calculate('2');">2</div>
+        <div class="number" id="3" onclick="Display(3),Calculate('3');">3</div>
+        <div class="number outer" id="add" onclick="Display('+'),Calculate('+');">+</div>
+        <div class="number zero" id="0" onclick="Display(0),Calculate('0');">0</div>
+        <div class="number" id="dot" onclick="Display('.'),Calculate('.');">.</div>
+        <div class="number equals" id="equal" onclick="Answer();"><img src="./assets/icons/equal.png" alt="="></div>
+    </div>
+</body>
+</html>
