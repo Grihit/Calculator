@@ -1,62 +1,70 @@
-html{
-    height: 100%;
+html {
+  height: 100%;
 }
-body{
-    margin: 0px;
-    height: 100%;
+body {
+  margin: 0px;
+  height: 100%;
 }
-.top{
-    position: relative;
-    background-color: rgb(71, 71, 71);
-    text-align: right;
-    height: 40%;
+.top {
+  position: relative;
+  background-color: rgb(71, 71, 71);
+  text-align: right;
+  height: 40%;
 }
-.inner{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    padding: 10px;
-    font-size: 40px;
-    color: rgb(207, 205, 205);
-    font-weight: bold;
-    font-family: 'Poppins', sans-serif;
+.inner {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 10px;
+  font-size: 3em;
+  color: rgb(207, 205, 205);
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
 }
-.bottom{
-    padding:5px;
-    display: flex;
-    flex-wrap: wrap;
-    height: 20%;
-    height: 60%;
-    background-color: rgb(24, 24, 24);
+.bottom {
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  height: 20%;
+  height: 60%;
+  background-color: rgb(24, 24, 24);
 }
-.number{
-    width: 24.4%;
-    height: 13.8%;
-    flex-grow: 1;
-    background-color: rgb(175, 175, 175);
-    font-weight: bold;
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
-    font-size: 24px;
-    padding-top: 22px;
-    border: rgb(78, 78, 78) solid 1px;
-    height: 19%;
+.number {
+  width: 24.4%;
+  flex-grow: 1;
+  background-color: rgb(175, 175, 175);
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-size: 1.5em;
+  padding-top: 1.375rem;
+  border: rgb(78, 78, 78) solid 1px;
 }
-.zero{
-    width: 49.4%;
+#display-top {
+  font-size: 0.5em;
+  color: rgb(182, 179, 179);
 }
-.outer{
-    background-color: rgb(141, 141, 141);
+span{
+    display: inline-block;
+    width: 100%;
+    word-wrap: break-word;
 }
-.equals{
-    background-color: rgb(42, 152, 241);
+.zero {
+  width: 49.4%;
 }
-.number:active{
-    background-color: rgb(155, 155, 155);
+.outer {
+  background-color: rgb(141, 141, 141);
 }
-.outer:active{
-    background-color: rgb(104, 104, 104);
+.equals {
+  background-color: rgb(42, 152, 241);
 }
-.equals:active{
-    background-color: rgb(33, 126, 202);
+.number:active {
+  background-color: rgb(155, 155, 155);
+}
+.outer:active {
+  background-color: rgb(104, 104, 104);
+}
+.equals:active {
+  background-color: rgb(33, 126, 202);
 }
